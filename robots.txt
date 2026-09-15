@@ -1,5 +1,4 @@
 User-agent: *
 Allow: /
-Disallow: /legal/
 
-# O endereço do sitemap deve ser configurado com a URL definitiva do site antes do lançamento.
+# O sitemap receberá a URL absoluta quando o domínio definitivo do site for definido.
