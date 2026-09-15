@@ -7,6 +7,16 @@
 
 <meta name="google-site-verification" content="ceau1UK-Za5_HUCGIQIpIHRfI1nMB798k0UdJnSGdDw">
 <meta name="google-adsense-account" content="ca-pub-8038804495460874">
+
+<!-- Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XHD9FQRJLZ"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-XHD9FQRJLZ');
+</script>
+
 <title>Galaxy Frontier — Jogo Espacial Online Grátis para Jogar</title>
 <meta name="description" content="Jogue Galaxy Frontier, um jogo espacial online grátis para navegador. Jogue sem baixar, controle sua nave, destrua inimigos, colete poderes, melhore suas armas e conquiste a galáxia.">
 <meta name="robots" content="index, follow">
@@ -30,12 +40,7 @@
   "@type": ["VideoGame", "WebApplication"],
   "name": "Galaxy Frontier",
   "description": "Jogo espacial online gratuito para navegador. Jogue sem baixar, controle sua nave, destrua inimigos, colete poderes, melhore armas e evolua sua nave.",
-  "genre": [
-    "Ação",
-    "Arcade",
-    "Ficção científica",
-    "Jogo espacial"
-  ],
+  "genre": ["Ação", "Arcade", "Ficção científica", "Jogo espacial"],
   "applicationCategory": "GameApplication",
   "operatingSystem": "Any",
   "browserRequirements": "Requires JavaScript-enabled web browser",
@@ -54,7 +59,6 @@
 </script>
 
 </head>
-
 <body>
 
 <header class="site-header">
@@ -63,7 +67,6 @@
 <span class="logo-icon">🚀</span>
 <span>Galaxy Frontier</span>
 </a>
-
 <nav class="main-nav" aria-label="Navegação principal">
 <a href="index.html" class="active">Início</a>
 <a href="como-jogar.html">Como Jogar</a>
@@ -74,23 +77,13 @@
 </header>
 
 <main>
-
 <section class="hero">
 <div class="container">
 <div class="hero-content">
-
 <span class="hero-badge">🚀 JOGO ESPACIAL ONLINE GRÁTIS</span>
-
 <h1>Galaxy Frontier — Jogo Espacial Online Grátis</h1>
-
-<p class="hero-subtitle">
-Jogue gratuitamente no navegador, sem baixar. Destrua inimigos, colete poderes, evolua sua nave e conquiste a fronteira da galáxia.
-</p>
-
-<p class="hero-description">
-Procurando jogos grátis online para jogar agora? Controle sua nave espacial, enfrente diferentes tipos de inimigos, desbloqueie novas armas e tente alcançar pontuações cada vez maiores.
-</p>
-
+<p class="hero-subtitle">Jogue gratuitamente no navegador, sem baixar. Destrua inimigos, colete poderes, evolua sua nave e conquiste a fronteira da galáxia.</p>
+<p class="hero-description">Procurando jogos grátis online para jogar agora? Controle sua nave espacial, enfrente diferentes tipos de inimigos, desbloqueie novas armas e tente alcançar pontuações cada vez maiores.</p>
 </div>
 </div>
 </section>
@@ -98,371 +91,168 @@ Procurando jogos grátis online para jogar agora? Controle sua nave espacial, en
 <section class="game-section">
 <div class="container">
 <div class="game-card">
-
 <div class="game-title-bar">
-<div>
-<span class="game-status-dot"></span>
-<strong>GALAXY FRONTIER</strong>
-</div>
+<div><span class="game-status-dot"></span><strong>GALAXY FRONTIER</strong></div>
 <span class="game-status-text" id="gameStatus">PRONTO</span>
 </div>
 
 <div class="game-container" id="gameContainer">
-
 <canvas id="gameCanvas" width="1280" height="720" aria-label="Área do jogo Galaxy Frontier"></canvas>
 
 <div class="game-hud" id="gameHud">
-
-<div class="hud-item health-hud">
-<span class="hud-label">❤️ VIDA</span>
-<strong id="health">175</strong>
-</div>
-
-<div class="hud-item shield-hud">
-<span class="hud-label">🛡️ ESCUDO</span>
-<strong id="shield">102</strong>
-</div>
-
-<div class="hud-item score-hud">
-<span class="hud-label">⭐ PONTOS</span>
-<strong id="score">0</strong>
-</div>
-
-<div class="hud-item level-hud">
-<span class="hud-label">🌌 FASE</span>
-<strong id="level">1</strong>
-</div>
-
-<div class="hud-item weapon-hud">
-<span class="hud-label">🔫 ARMA</span>
-<strong id="weapon">Simples</strong>
-</div>
-
-<div class="hud-item ship-hud">
-<span class="hud-label">🛸 NAVE</span>
-<strong id="ship">Falcon</strong>
-</div>
-
+<div class="hud-item health-hud"><span class="hud-label">❤️ VIDA</span><strong id="health">175</strong></div>
+<div class="hud-item shield-hud"><span class="hud-label">🛡️ ESCUDO</span><strong id="shield">102</strong></div>
+<div class="hud-item score-hud"><span class="hud-label">⭐ PONTOS</span><strong id="score">0</strong></div>
+<div class="hud-item level-hud"><span class="hud-label">🌌 FASE</span><strong id="level">1</strong></div>
+<div class="hud-item weapon-hud"><span class="hud-label">🔫 ARMA</span><strong id="weapon">Simples</strong></div>
+<div class="hud-item ship-hud"><span class="hud-label">🛸 NAVE</span><strong id="ship">Falcon</strong></div>
 </div>
 
 <div class="game-controls" id="gameControls">
-
-<button type="button" id="pauseGame" class="game-control-btn pause-btn" aria-label="Pausar ou continuar o jogo">
-⏸ Pausar
-</button>
-
-<button type="button" id="upgradeGame" class="game-control-btn upgrade-btn" aria-label="Abrir melhorias da nave">
-🔧 Melhorar
-</button>
-
-<button type="button" id="historyGame" class="game-control-btn history-btn" aria-label="Abrir histórico de partidas">
-📜 Histórico
-</button>
-
+<button type="button" id="pauseGame" class="game-control-btn pause-btn" aria-label="Pausar ou continuar o jogo">⏸ Pausar</button>
+<button type="button" id="upgradeGame" class="game-control-btn upgrade-btn" aria-label="Abrir melhorias da nave">🔧 Melhorar</button>
+<button type="button" id="historyGame" class="game-control-btn history-btn" aria-label="Abrir histórico de partidas">📜 Histórico</button>
 </div>
 
 <div class="center-message" id="centerMessage" aria-live="polite"></div>
 
 <div class="game-overlay start-overlay" id="startOverlay">
-
 <div class="overlay-box">
-
 <div class="overlay-icon">🚀</div>
-
 <h2>Galaxy Frontier</h2>
-
 <p>Prepare sua nave para a batalha.</p>
-
-<p class="overlay-small">
-Destrua inimigos, colete poderes, melhore suas armas e evolua sua nave.
-</p>
-
-<button type="button" id="startGame" class="primary-game-btn">
-🚀 INICIAR JOGO
-</button>
-
-<div class="keyboard-hint">
-<span>ENTER</span> iniciar / pausar
-</div>
-
+<p class="overlay-small">Destrua inimigos, colete poderes, melhore suas armas e evolua sua nave.</p>
+<button type="button" id="startGame" class="primary-game-btn">🚀 INICIAR JOGO</button>
+<div class="keyboard-hint"><span>ENTER</span> iniciar / pausar</div>
 </div>
 </div>
 
 <div class="game-overlay pause-overlay hidden" id="pauseOverlay">
-
 <div class="overlay-box">
-
 <div class="overlay-icon">⏸️</div>
-
 <h2>Jogo Pausado</h2>
-
 <p>Sua nave está segura.</p>
-
-<button type="button" id="resumeGame" class="primary-game-btn">
-▶ Continuar
-</button>
-
-<div class="keyboard-hint">
-Pressione <span>ENTER</span> para continuar
-</div>
-
+<button type="button" id="resumeGame" class="primary-game-btn">▶ Continuar</button>
+<div class="keyboard-hint">Pressione <span>ENTER</span> para continuar</div>
 </div>
 </div>
 
 <div class="game-overlay upgrade-overlay hidden" id="upgradeOverlay">
-
 <div class="overlay-box upgrade-box">
-
-<button type="button" id="closeUpgrade" class="close-overlay-btn" aria-label="Fechar melhorias">
-✕
-</button>
-
+<button type="button" id="closeUpgrade" class="close-overlay-btn" aria-label="Fechar melhorias">✕</button>
 <div class="overlay-icon">🔧</div>
-
 <h2>Melhorias da Nave</h2>
-
-<p>
-Use seus pontos para melhorar sua nave durante a partida.
-</p>
-
+<p>Use seus pontos para melhorar sua nave durante a partida.</p>
 <div class="upgrade-list">
-
-<button type="button" class="upgrade-option" data-upgrade="shield">
-<span class="upgrade-icon">🛡️</span>
-<span>
-<strong>Escudo</strong>
-<small>+25 de escudo</small>
-</span>
-<b>500 ⭐</b>
-</button>
-
-<button type="button" class="upgrade-option" data-upgrade="weapon">
-<span class="upgrade-icon">🔫</span>
-<span>
-<strong>Arma</strong>
-<small>Aumenta o poder de fogo</small>
-</span>
-<b>1.000 ⭐</b>
-</button>
-
-<button type="button" class="upgrade-option" data-upgrade="speed">
-<span class="upgrade-icon">⚡</span>
-<span>
-<strong>Velocidade</strong>
-<small>Aumenta a movimentação</small>
-</span>
-<b>750 ⭐</b>
-</button>
-
+<button type="button" class="upgrade-option" data-upgrade="shield"><span class="upgrade-icon">🛡️</span><span><strong>Escudo</strong><small>+25 de escudo</small></span><b>500 ⭐</b></button>
+<button type="button" class="upgrade-option" data-upgrade="weapon"><span class="upgrade-icon">🔫</span><span><strong>Arma</strong><small>Aumenta o poder de fogo</small></span><b>1.000 ⭐</b></button>
+<button type="button" class="upgrade-option" data-upgrade="speed"><span class="upgrade-icon">⚡</span><span><strong>Velocidade</strong><small>Aumenta a movimentação</small></span><b>750 ⭐</b></button>
 </div>
-
-<p class="upgrade-note" id="upgradeMessage">
-O jogo fica pausado enquanto você escolhe uma melhoria.
-</p>
-
+<p class="upgrade-note" id="upgradeMessage">O jogo fica pausado enquanto você escolhe uma melhoria.</p>
 </div>
 </div>
 
 <div class="game-overlay history-overlay hidden" id="historyOverlay">
-
 <div class="overlay-box history-box">
-
-<button type="button" id="closeHistory" class="close-overlay-btn" aria-label="Fechar histórico">
-✕
-</button>
-
+<button type="button" id="closeHistory" class="close-overlay-btn" aria-label="Fechar histórico">✕</button>
 <div class="overlay-icon">📜</div>
-
 <h2>Histórico de Partidas</h2>
-
-<p>
-Suas melhores partidas ficam salvas neste navegador.
-</p>
-
-<div class="history-content" id="historyList">
-<p class="empty-history">
-Nenhuma partida registrada ainda.
-</p>
-</div>
-
+<p>Suas melhores partidas ficam salvas neste navegador.</p>
+<div class="history-content" id="historyList"><p class="empty-history">Nenhuma partida registrada ainda.</p></div>
 <div class="history-actions">
-
-<button type="button" id="clearHistory" class="secondary-game-btn">
-🗑️ Limpar histórico
-</button>
-
-<button type="button" id="closeHistoryBottom" class="primary-game-btn">
-Voltar ao jogo
-</button>
-
+<button type="button" id="clearHistory" class="secondary-game-btn">🗑️ Limpar histórico</button>
+<button type="button" id="closeHistoryBottom" class="primary-game-btn">Voltar ao jogo</button>
 </div>
-
 </div>
 </div>
 
 <div class="game-overlay game-over-overlay hidden" id="gameOverOverlay">
-
 <div class="overlay-box">
-
 <div class="overlay-icon">💥</div>
-
 <h2>Fim de Jogo</h2>
-
-<p>
-A fronteira da galáxia ainda espera por você.
-</p>
-
-<div class="final-score-box">
-
-<span>SUA PONTUAÇÃO</span>
-
-<strong id="finalScore">0</strong>
-
-</div>
-
+<p>A fronteira da galáxia ainda espera por você.</p>
+<div class="final-score-box"><span>SUA PONTUAÇÃO</span><strong id="finalScore">0</strong></div>
 <div class="game-result-grid">
-
-<div>
-<span>Última partida</span>
-<strong id="lastScore">0</strong>
+<div><span>Última partida</span><strong id="lastScore">0</strong></div>
+<div><span>Recorde</span><strong id="highScore">0</strong></div>
 </div>
-
-<div>
-<span>Recorde</span>
-<strong id="highScore">0</strong>
-</div>
-
-</div>
-
-<button type="button" id="restartGame" class="primary-game-btn">
-🚀 Jogar Novamente
-</button>
-
-<div class="keyboard-hint">
-Pressione <span>ENTER</span> para jogar novamente
-</div>
-
+<button type="button" id="restartGame" class="primary-game-btn">🚀 Jogar Novamente</button>
+<div class="keyboard-hint">Pressione <span>ENTER</span> para jogar novamente</div>
 </div>
 </div>
-
 </div>
 
 <div class="game-help">
-
-<div class="help-item">
-<span>⌨️</span>
-<strong>Movimento</strong>
-<small>WASD ou teclado</small>
+<div class="help-item"><span>⌨️</span><strong>Movimento</strong><small>WASD ou teclado</small></div>
+<div class="help-item"><span>🚀</span><strong>Atirar</strong><small>Barra de espaço</small></div>
+<div class="help-item"><span>⏸️</span><strong>Pausar</strong><small>ENTER</small></div>
+<div class="help-item"><span>🔧</span><strong>Melhorar</strong><small>Botão dentro do jogo</small></div>
 </div>
-
-<div class="help-item">
-<span>🚀</span>
-<strong>Atirar</strong>
-<small>Barra de espaço</small>
-</div>
-
-<div class="help-item">
-<span>⏸️</span>
-<strong>Pausar</strong>
-<small>ENTER</small>
-</div>
-
-<div class="help-item">
-<span>🔧</span>
-<strong>Melhorar</strong>
-<small>Botão dentro do jogo</small>
-</div>
-
-</div>
-
 </div>
 </div>
 </section>
 
 <section class="history-section">
-
 <div class="container">
-
 <div class="section-heading">
-
 <span class="section-label">📜 SEU PROGRESSO</span>
-
 <h2>Histórico de partidas</h2>
-
-<p>
-Veja suas partidas recentes e acompanhe sua evolução no Galaxy Frontier.
-</p>
-
+<p>Veja suas partidas recentes e acompanhe sua evolução no Galaxy Frontier.</p>
 </div>
-
 <div class="history-card">
-
-<div id="pageHistoryList">
-<p class="empty-history">
-Suas partidas aparecerão aqui depois que você jogar.
-</p>
+<div id="pageHistoryList"><p class="empty-history">Suas partidas aparecerão aqui depois que você jogar.</p></div>
 </div>
-
-</div>
-
 </div>
 </section>
 
 <section class="ad-section" aria-label="Espaço para publicidade">
-
-<div class="container">
-
-<div class="ad-placeholder">
-<span>ESPAÇO PARA PUBLICIDADE</span>
-</div>
-
-</div>
-
+<div class="container"><div class="ad-placeholder"><span>ESPAÇO PARA PUBLICIDADE</span></div></div>
 </section>
 
 <section class="seo-content">
-
 <div class="container">
-
 <article class="content-card">
-
 <span class="section-label">JOGOS GRÁTIS ONLINE</span>
-
 <h2>Jogue Galaxy Frontier gratuitamente no navegador</h2>
-
-<p>
-Procurando um jogo grátis online para jogar sem baixar? Galaxy Frontier é um jogo espacial gratuito para navegador. Você pode jogar diretamente pela página, controlar sua nave e enfrentar uma batalha de ação e arcade.
-</p>
-
+<p>Procurando um jogo grátis online para jogar sem baixar? Galaxy Frontier é um jogo espacial gratuito para navegador. Você pode jogar diretamente pela página, controlar sua nave e enfrentar uma batalha de ação e arcade.</p>
 <h3>Jogo espacial online e jogo de nave grátis</h3>
-
-<p>
-Galaxy Frontier combina ação, tiro e ficção científica em uma aventura espacial. Controle sua nave, destrua inimigos, colete poderes e tente alcançar a maior pontuação possível.
-</p>
-
+<p>Galaxy Frontier combina ação, tiro e ficção científica em uma aventura espacial. Controle sua nave, destrua inimigos, colete poderes e tente alcançar a maior pontuação possível.</p>
 <h3>Jogos grátis para navegador</h3>
-
-<p>
-O jogo foi desenvolvido para funcionar diretamente no navegador, sem a necessidade de instalar um aplicativo. No computador, use o teclado para controlar a nave. Em dispositivos móveis, utilize os controles na tela.
-</p>
-
+<p>O jogo foi desenvolvido para funcionar diretamente no navegador, sem a necessidade de instalar um aplicativo. No computador, use o teclado para controlar a nave. Em dispositivos móveis, utilize os controles na tela.</p>
 <h3>Como funciona o jogo?</h3>
-
-<p>
-Durante cada partida, você controla uma nave espacial em uma batalha contínua. Inimigos diferentes aparecem na tela e precisam ser destruídos antes que avancem pela fronteira galáctica.
-</p>
-
-<p>
-Ao destruir inimigos, você recebe pontos. Conforme sua pontuação aumenta, novas fases, armas e melhorias ficam disponíveis.
-</p>
-
+<p>Durante cada partida, você controla uma nave espacial em uma batalha contínua. Inimigos diferentes aparecem na tela e precisam ser destruídos antes que avancem pela fronteira galáctica.</p>
+<p>Ao destruir inimigos, você recebe pontos. Conforme sua pontuação aumenta, novas fases, armas e melhorias ficam disponíveis.</p>
 <h3>Evolua sua nave</h3>
-
-<p>
-O Galaxy Frontier possui diferentes níveis de armas e naves. Durante a partida, você poderá coletar poderes e utilizar melhorias para aumentar seu escudo, velocidade e capacidade ofensiva.
-</p>
-
+<p>O Galaxy Frontier possui diferentes níveis de armas e naves. Durante a partida, você poderá coletar poderes e utilizar melhorias para aumentar seu escudo, velocidade e capacidade ofensiva.</p>
 <h3>Colete poderes e alcance novos recordes</h3>
+<p>Alguns inimigos podem liberar itens especiais. Colete esses poderes durante o jogo para fortalecer sua nave e aumentar suas chances de sobreviver. Sua pontuação e suas partidas serão registradas neste navegador.</p>
+<h3>Jogue no computador ou celular</h3>
+<p>Galaxy Frontier foi preparado para jogar diretamente no navegador. No computador, utilize teclado e mouse quando disponíveis. Em dispositivos móveis compatíveis, utilize os controles virtuais apresentados durante a partida.</p>
+<h3>Um jogo gratuito para jogar agora</h3>
+<p>Não é necessário instalar um aplicativo para começar. Abra o Galaxy Frontier no navegador, inicie uma partida e tente superar seu próprio recorde.</p>
+</article>
+</div>
+</section>
 
-<p>
-Alguns inimigos podem liberar itens especiais. Colete esses poderes durante o jogo para fortalecer sua nave e aumentar suas chances de sobreviver. Sua pontuação e suas partidas fi
+</main>
+
+<footer class="site-footer">
+<div class="container">
+<p>© 2026 Galaxy Frontier. Todos os direitos reservados.</p>
+<nav aria-label="Links institucionais">
+<a href="sobre.html">Sobre</a>
+<a href="contato.html">Contato</a>
+<a href="privacidade.html">Privacidade</a>
+<a href="termos.html">Termos</a>
+<a href="cookies.html">Cookies</a>
+<a href="seguranca.html">Segurança</a>
+</nav>
+<p class="footer-disclaimer">Galaxy Frontier é um jogo gratuito para navegador. Informações e recursos podem ser atualizados para melhorar a experiência do usuário.</p>
+</div>
+</footer>
+
+<script src="assets/js/game.js?v=20260915-3" defer></script>
+<script src="assets/js/mobile-orientation.js?v=20260915-3" defer></script>
+
+</body>
+</html>
