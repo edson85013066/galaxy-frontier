@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-# O sitemap receberá a URL absoluta quando o domínio definitivo do site for definido.
+Sitemap: https://galaxyfrontierjogoespacial.netlify.app/sitemap.xml
